@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+header, main, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: teal;
+    color: white;
+    height: 100vh;
+    font-size: 16px;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #1f1e1e;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    padding: 10px;
+}
+
+main {
+    min-height: 500px;
+
+}
+
+footer{ 
+    background-color: #1f1e1e;
+    color: white;
+    height: 10vh;
+
+}
+h1 {
+    font-size: 74px;
+}
+
+header p {
+    font-size: 5vw;
+}
+
+
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 1200px ) {
+    main {
+        background-color: #6BC4EA;
+    }
+    h1 {
+        text-align: center;
+        font-size: 8vw;
+
+    }
+}
+
+@media screen and (max-width: 1024px){
+    main {
+        background-color: #F25764;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 9vw;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        background-color: #F2DC99;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    main {
+        background-color: #0EAD8C;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav  {
+        min-height: 20vh;
+    }
+
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+        gap: 3px;
+        height: 20vh;
+
+    }
+}
