@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+header, main, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: teal;
+    color: white;
+    height: 30vh;
+    font-size: 16px;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #1f1e1e;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    padding: 10px;
+}
+nav ul li a:hover {
+    transform: scale(1.2);
+}
+
+
+main {
+    min-height: 500px;
+
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-width: 100vh;
+}
+
+footer{ 
+    background-color: #1f1e1e;
+    color: white;
+    height: 10vh;
+
+}
+h1 {
+    font-size: 54px;
+}
+
+header p {
+    font-size: 5vw;
+}
+
+.card {
+    width: 400px;
+    height: 300px;
+    border: 2px solid white;
+    padding: 5px;
+    transition: 2s;
+    background-color: teal;
+    transform: rotate(10deg);
+}
+
+.card img {
+    width: 100%;
+    opacity: 0.5;
+    transition: 2s;
+
+}
+
+.card:hover {
+    transform: scale(2);
+}
+
+.card:hover img {
+    opacity: 1;
+}
